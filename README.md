@@ -72,6 +72,6 @@ All patient and hospital records in this project are synthetic and created for e
 
 ## Module
 
-**CPU4:103 – Introduction to Database**
+**CPU4103 – Introduction to Database**
 
 **Project:** Crownfield Eye Hospital Database Development
