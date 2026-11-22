@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="vzfaAzkzu-5YMtL7U5Uo">
+    <mxGraphModel dx="2122" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-1" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;PATIENT&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK PatientID&lt;/div&gt;&lt;div&gt;PatientName&lt;/div&gt;&lt;div&gt;Postcode&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="-300" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-2" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;CLINICIAN&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK ClinicianID&lt;/div&gt;&lt;div&gt;ClinicianName&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Specialty&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="-115" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-34" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-4">
+          <mxGeometry relative="1" x="0.0085" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="815" />
+            </Array>
+            <mxPoint x="230" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-3" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;CLINIC&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK ClinicID&lt;/div&gt;&lt;div&gt;ClinicName&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;ClinicAddress&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="100" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-25" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-27" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-31" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERzeroToOne;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-4" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;APPOINTMENT&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK AppointmentID&lt;/div&gt;&lt;div&gt;FK PatientID&lt;/div&gt;&lt;div&gt;FK ClinicianID&lt;/div&gt;&lt;div&gt;FK ClinicID&lt;/div&gt;&lt;div&gt;AppointmentDate&lt;/div&gt;&lt;div&gt;AppointmentTime&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Notes&lt;/span&gt;" vertex="1">
+          <mxGeometry height="140" width="130" x="250" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-5" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;APPOINTMENT DIAGNOSIS&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK, FK AppointmentID&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;PK, FK DiagnosisID&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="520" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-26" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-6" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;DIAGNOSIS&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK DiagnosisID&lt;/div&gt;&lt;div&gt;DiagnosisName&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="550" y="622" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-29" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERoneToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-7" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;PRESCRIPTION&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK PrescriptionID&lt;/div&gt;&lt;div&gt;FK AppointmentID&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;PrescriptionDate&lt;/span&gt;" vertex="1">
+          <mxGeometry height="95" width="180" x="225" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-8" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;FOLLOW-UP&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK FollowUpID&lt;/div&gt;&lt;div&gt;FK AppointmentID&lt;/div&gt;&lt;div&gt;DueDate&lt;/div&gt;&lt;div&gt;Priority&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Status&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="130" x="250" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-30" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-9" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;MEDICINE&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK MedicineID&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;MedicineName&lt;/span&gt;" vertex="1">
+          <mxGeometry height="95" width="170" x="520" y="342.5" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-10" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;PRESCRIPTION ITEM&lt;/div&gt;&lt;div&gt;----------------&lt;/div&gt;&lt;div&gt;PK PrescriptionItemID&lt;/div&gt;&lt;div&gt;FK PrescriptionID&lt;/div&gt;&lt;div&gt;FK MedicineID&lt;/div&gt;&lt;div&gt;Dose&lt;/div&gt;&lt;div&gt;Route&lt;/div&gt;&lt;div&gt;Frequency&lt;/div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Duration&lt;/span&gt;" vertex="1">
+          <mxGeometry height="140" width="195" x="217.5" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-32" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.878;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-230" y="902.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="knq_3dgZrMV4bu3G3pG5-33" edge="1" parent="1" source="knq_3dgZrMV4bu3G3pG5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.575;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" target="knq_3dgZrMV4bu3G3pG5-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-45" y="860.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
